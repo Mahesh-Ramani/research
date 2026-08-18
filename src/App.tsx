@@ -38,7 +38,17 @@ export default function App() {
       <footer className="border-t border-stone-200 bg-[#f6f3ef] py-10">
         <div className="mx-auto flex max-w-6xl flex-col justify-between gap-3 px-4 text-xs text-stone-500 sm:flex-row sm:px-6 lg:px-8">
           <div className="font-serif text-base font-semibold text-stone-800">{SITE.name}</div>
-          <a href={`mailto:${SITE.email}`} className="hover:text-stone-950">{SITE.email}</a>
+          <div className="flex items-center gap-4">
+            <a href={`mailto:${SITE.email}`} className="hover:text-stone-950">{SITE.email}</a>
+            <a
+              href="https://www.linkedin.com/in/mahesh-ramani-3289162a2/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-stone-950"
+            >
+              LinkedIn ↗
+            </a>
+          </div>
         </div>
       </footer>
 
