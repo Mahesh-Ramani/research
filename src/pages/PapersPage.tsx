@@ -32,9 +32,6 @@ export function PapersPage({ onRead, onExplain }: Props) {
       <div className="border-b border-stone-200 pb-8">
         <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500">Research archive · {PAPERS.length} manuscripts</div>
         <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight sm:text-5xl">Papers & preprints</h1>
-        <p className="mt-3 max-w-2xl font-serif text-base leading-relaxed text-stone-600">
-          Each entry uses the attached manuscript itself as the source for its title and abstract. The reader opens the complete PDF inside the site.
-        </p>
 
         <div className="mt-7 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <label className="relative block max-w-md flex-1">

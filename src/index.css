@@ -52,6 +52,7 @@ h4 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
   overflow: hidden;
+  line-height: 2.15;
 }
 
 .abstract-clamp .math-block {

@@ -57,9 +57,6 @@ export function ExplanationsPage({ selectedId, onRead }: Props) {
       <div className="max-w-3xl">
         <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500">Research, explained</div>
         <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight sm:text-5xl">Plain-English explanations</h1>
-        <p className="mt-4 font-serif text-base leading-relaxed text-stone-600">
-          A separate layer for explaining the questions, ideas, and results without replacing the technical manuscripts themselves.
-        </p>
       </div>
 
       <div className="mt-10 divide-y divide-stone-200 border-y border-stone-200">
