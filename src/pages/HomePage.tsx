@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { ArrowRight, BookOpen } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import { PAPERS } from '../data/papersData';
 import { SITE } from '../data/siteData';
 import { PageTab, Paper } from '../types';
@@ -66,48 +66,6 @@ export function HomePage({ setTab, onRead }: Props) {
           </div>
         </div>
       </section>
-
-      <section className="space-y-8">
-        <div>
-          <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-stone-500">Research directions</div>
-          <h2 className="mt-2 font-serif text-3xl font-semibold tracking-tight">Three connected lines of work</h2>
-        </div>
-        <div className="grid gap-6 md:grid-cols-3">
-          <ResearchDirection
-            index="01"
-            title="Extremal hypergraphs & finite geometry"
-            text="Incidence-rank methods, generalized crowns, finite nets, affine and projective planes, maximal arcs, and stability. Includes a solution to the Adak–Verma conjecture."
-            onClick={() => setTab('papers')}
-          />
-          <ResearchDirection
-            index="02"
-            title="Boolean lattices & pseudo-roots"
-            text="Diamond generation in Boolean lattices, cographs, and obstructions to rational recovery in noncommutative settings."
-            onClick={() => setTab('papers')}
-          />
-          <ResearchDirection
-            index="03"
-            title="Three-dimensional queen graphs"
-            text="Domination on finite 3D boards and spectral structure for the toroidal analogue, using exact computation and finite Fourier analysis."
-            onClick={() => setTab('papers')}
-          />
-        </div>
-      </section>
     </div>
-  );
-}
-
-function ResearchDirection({ index, title, text, onClick }: { index: string; title: string; text: string; onClick: () => void }) {
-  return (
-    <article className="flex min-h-64 flex-col justify-between border border-stone-200 bg-white p-7">
-      <div>
-        <div className="font-mono text-[10px] text-stone-400">{index}</div>
-        <h3 className="mt-5 font-serif text-2xl font-semibold leading-tight">{title}</h3>
-        <p className="mt-4 text-sm leading-relaxed text-stone-600">{text}</p>
-      </div>
-      <button onClick={onClick} className="mt-8 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.16em] text-stone-700">
-        View papers <ArrowRight className="h-3.5 w-3.5" />
-      </button>
-    </article>
   );
 }
