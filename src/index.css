@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  color: #1c1917;
+  background: #fdfcfb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+a,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.font-serif,
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.math-block {
+  margin: 0.85rem 0;
+  overflow-x: auto;
+  padding: 0.25rem 0;
+}
+
+.katex {
+  font-size: 1em;
+}
+
+.abstract-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.abstract-clamp .math-block {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.abstract-clamp .katex-display {
+  display: inline;
+  margin: 0;
+}
+
+code {
+  background: #f1efec;
+  padding: 0.1rem 0.25rem;
+}
+
+::selection {
+  background: #ddd6ce;
+}

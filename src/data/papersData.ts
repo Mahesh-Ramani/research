@@ -1,0 +1,106 @@
+import { Paper } from '../types';
+
+export const PAPERS: Paper[] = [
+  {
+    id: 'incidence-rank-bounded-defect',
+    title: 'Incidence Rank and Bounded Defect for Linear Hypergraphs with Cograph Line Graphs',
+    authors: ['Mahesh Ramani'],
+    year: 2026,
+    dateLabel: '16 August 2026',
+    area: 'Hypergraphs',
+    tags: ['incidence rank', 'cographs', 'finite nets', 'affine planes', 'extremal hypergraphs'],
+    featured: true,
+    highlight: 'Solved the Adak–Verma conjecture and developed a bounded-defect structural theory around the extremal case.',
+    pdfFile: 'papers/incidence-rank-bounded-defect.pdf',
+    previewFile: 'previews/incidence-rank-bounded-defect.jpg',
+    abstract:
+      'Let $N(H)$ be the edge–vertex incidence matrix of a finite linear $s$-uniform hypergraph whose line graph is a cograph, and define $$R_s(H)=(s+1)\\operatorname{rank}_{\\mathbb R}N(H)-s|E(H)|.$$ The inequality $R_s(H)\\ge0$ holds, with equality characterized by affine planes of order $s$ on every row-dependent component. Under the corresponding finite-net completion hypothesis, connected systems with bounded $R_s$ admit an explicit classification. If $F$ is connected, $R_s(F)=d\\le s-1$, the completion hypothesis holds through deficiency $d$, and $s>(d-1)^2$, then either $N(F)$ has full row rank and $|E(F)|=d$, or $F$ lies in a unique affine plane of order $s$. In the latter case, for some $0\\le h\\le d$, the system contains every line in $s+1-h$ parallel classes and exactly $d-h$ additional lines from the remaining $h$ classes. Conversely, each such system has defect $d$. Bruck\'s theorem gives the classification for every fixed $d$ and all sufficiently large $s$, while Metsch\'s completion theorem covers $d=o(s^{1/3})$. As a global consequence, if the total defect is at most $D$ in the completion range, deleting at most $D$ edges leaves a vertex-disjoint union of finite nets and affine planes. The associated column defect and row leverage are determined explicitly as well.',
+  },
+  {
+    id: 'robust-repulsion-growing-crowns',
+    title: 'Robust Repulsion for Growing Crowns in Linear Hypergraphs',
+    authors: ['Mahesh Ramani'],
+    year: 2026,
+    dateLabel: '16 August 2026',
+    area: 'Hypergraphs',
+    tags: ['linear hypergraphs', 'crowns', 'stability', 'finite geometry', 'Turán theory'],
+    featured: true,
+    arxivId: '2608.01568',
+    pdfFile: 'papers/robust-repulsion-growing-crowns.pdf',
+    previewFile: 'previews/robust-repulsion-growing-crowns.jpg',
+    abstract:
+      'Put $q=r-1$, $t=k-1$, and $D=tq+1$. For an edge $e$ of a linear $C^r_{1,k}$-free $r$-uniform hypergraph, define $$\\delta_H(e)=\\sum_{v\\in e}\\frac1{d_H(v)}-\\frac rD.$$ The defect satisfies $\\delta_H(e)\\ge0$. At equality, every vertex of $e$ has degree $D$, and the petal trace at $e$ is a disjoint union of $t$ affine planes of order $q$. Equivalently, restoring the base line gives $t$ projective planes of order $q$ with common line $e$. For growing crowns, the equality structure is stable in the following sense. If $q_j\\to\\infty$, $2\\le t_j\\le q_j$, and $e_j$ is an edge of a finite linear $C_{1,t_j+1}^{q_j+1}$-free hypergraph satisfying $$\\frac{t_j^2}{q_j}\\to0,\\qquad t_j^3\\delta_{H_j}(e_j)\\to0,$$ then, for every fixed $0<\\theta<1$, $$\\frac{|\\{f\\ne e_j:f\\cap e_j\\ne\\varnothing,\\ \\delta_{H_j}(f)\\ge\\theta/t_j^2\\}|}{(q_j+1)(t_jq_j)}\\to1.$$ Thus an edge close to equality is adjacent almost entirely to edges with defect of order at least $t_j^{-2}$. A uniform form gives absolute constants $Q_0,\\varepsilon_0,c_0>0$ such that, whenever $q\\ge Q_0t^2$ and $\\delta_H(e)<\\varepsilon_0/t^3$, at least $\\tfrac12(q+1)tq$ neighbors of $e$ have defect at least $1/(100t^2)$. Consequently, $$c^{\\mathrm{lin}}_{q+1,t+1}\\le t-\\frac{c_0}{t},$$ where $c^{\\mathrm{lin}}_{r,k}$ denotes the asymptotic linear Turán coefficient for $C^r_{1,k}$.',
+  },
+  {
+    id: 'blocking-amalgamations-maximal-arcs',
+    title: 'Blocking Amalgamations, Maximal Arcs, and Generalized Crowns',
+    authors: ['Mahesh Ramani'],
+    year: 2026,
+    dateLabel: '16 August 2026',
+    area: 'Hypergraphs',
+    tags: ['generalized crowns', 'block amalgamations', 'maximal arcs', 'projective planes', 'Turán theory'],
+    pdfFile: 'papers/blocking-amalgamations-maximal-arcs.pdf',
+    previewFile: 'previews/blocking-amalgamations-maximal-arcs.jpg',
+    abstract:
+      'Let $C^r_{1,k}$ be the $r$-uniform $k$-crown and put $h=r-k+2$. For a finite linear intersecting $r$-uniform hypergraph $G$, let $\\tau_h(G)$ be the minimum size of a set meeting every edge of $G$ in at least $h$ vertices, and define $$\\rho_{r,k}=\\sup_G\\frac{|E(G)|}{\\tau_h(G)}.$$ We prove that every fixed pair $(G,B)$, with $B$ an $h$-fold transversal, yields $$\\operatorname{ex}^{\\mathrm{lin}}_r(n,C^r_{1,k})\\ge \\frac{|E(G)|}{|B|}n-O_{G,B}(\\sqrt n)$$ for all sufficiently large $n$. Incidence counting gives $\\rho_{r,k}\\le r/h$, and equality is characterized after dualization by a pairwise balanced design with a distinguished regular subfamily. For $r=q+1$, where $q$ is a prime power, truncated projective planes give $$\\frac qh\\le \\rho_{q+1,k}\\le\\frac{q+1}{h}.$$ The upper endpoint is attained whenever a maximal $h$-arc exists; in particular, if $q$ is even and $h\\mid q$, then $\\rho_{q+1,k}=(q+1)/h$. Padding the truncated-plane construction gives $$\\rho_{r,r}=(1-o(1))\\frac r2$$ and, uniformly for each fixed $\\varepsilon>0$ and $\\varepsilon r\\le k\\le r$, $$\\rho_{r,k}=(1+o(1))\\frac{r}{r-k+2}.$$ For nonintersecting templates, the corresponding transfer is governed by a local safe-block condition that replaces the $h$-fold transversal requirement.',
+  },
+  {
+    id: 'cographs-diamond-generating',
+    title: 'Cographs and Minimum Diamond-Generating Edge Sets in Boolean Lattices',
+    authors: ['Mahesh Ramani'],
+    year: 2026,
+    dateLabel: '2026',
+    area: 'Algebra & Boolean Lattices',
+    tags: ['Boolean lattices', 'diamond closure', 'cographs', 'generating sets'],
+    featured: true,
+    arxivId: '2607.19048',
+    pdfFile: 'papers/cographs-diamond-generating.pdf',
+    previewFile: 'previews/cographs-diamond-generating.jpg',
+    abstract:
+      'We study a local closure operation on the cover edges of a Boolean lattice: whenever the two lower edges or the two upper edges of a square face are present, all four edges of that square are added. We prove that every set of cover edges generating the full cover graph of $B_n$ has cardinality at least $n$, and we classify all generators attaining this bound. For a graph $G$ on $[n]$, let $$S_G = \\{N_G(i) \\to N_G(i) \\cup \\{i\\} : i \\in [n]\\}.$$ Then $S_G$ diamond-generates the full cover graph if and only if $G$ is a cograph, and every minimum-cardinality generator arises uniquely in this way. Consequently, labeled minimum diamond-generating sets of $B_n$ are in bijection with labeled cographs on $n$ vertices.',
+  },
+  {
+    id: 'matrix-degree-obstruction',
+    title: 'A Matrix-Degree Obstruction to Rational Generation of Boolean-Lattice Pseudo-Roots',
+    authors: ['Mahesh Ramani'],
+    year: 2026,
+    dateLabel: '2026',
+    area: 'Algebra & Boolean Lattices',
+    tags: ['pseudo-roots', 'free skew fields', 'rational maps', 'matrix degree', 'cographs'],
+    arxivId: '2607.20248',
+    pdfFile: 'papers/matrix-degree-obstruction.pdf',
+    previewFile: 'previews/matrix-degree-obstruction.jpg',
+    abstract:
+      'For the neighborhood seed associated with the four-vertex path $P_4$, the diamond operations do not recover all Boolean-lattice pseudo-roots. The corresponding question for unrestricted rational operations in the free skew field is subtler: the seed map has an invertible linearization and therefore a unique formal inverse near every generic scalar point. We prove that this formal inverse is not free rational. A symmetric one-parameter curve of $2 \\times 2$ matrix outputs has a formal inverse whose coefficient field contains an element of degree three over $\\mathbb{Q}(t)$. An exact elimination in a quadratic Pauli algebra produces the irreducible cubic. Its conjugate inverse branches are unramified, forcing the generic matrix degree of the seed map to be at least three in every size $n \\ge 2$. This contradicts the degree-one consequence of any free rational inverse. The same matrix-degree argument, without specializing a hypothetical inverse, extends the obstruction to every graph containing an induced $P_4$.',
+  },
+  {
+    id: 'toroidal-3d-queen-spectrum',
+    title: 'The Adjacency Spectrum of the Toroidal Three-Dimensional Queen Graph',
+    authors: ['Mahesh Ramani'],
+    year: 2026,
+    dateLabel: '17 August 2026',
+    area: '3D Queen Graphs',
+    tags: ['spectral graph theory', 'Cayley graphs', 'finite Fourier analysis', 'queen graphs'],
+    arxivId: '2604.03842',
+    pdfFile: 'papers/toroidal-3d-queen-spectrum.pdf',
+    previewFile: 'previews/toroidal-3d-queen-spectrum.jpg',
+    abstract:
+      'Let $G_n$ be the toroidal three-dimensional queen graph on $(\\mathbb{Z}_n)^3$, where $n$ is odd and $3 \\nmid n$. Fourier characters diagonalize its adjacency matrix. For $a \\in (\\mathbb{Z}_n)^3$, let $\\mu(a)$ be the number of queen directions orthogonal to $a$ modulo $n$. The corresponding eigenvalue is $$\\lambda(a)=n\\mu(a)-13.$$ The possible orthogonality counts are exactly $$\\mu(a)\\in\\{0,1,2,3,4,13\\}.$$ Writing $M_j(n)=|\\{a:\\mu(a)=j\\}|$, their multiplicities are $$M_{13}(n)=1,\\quad M_4(n)=9(n-1),\\quad M_3(n)=4(n-1),$$ $$M_2(n)=12(n-1),\\quad M_1(n)=13n^2-72n+59,\\quad M_0(n)=n^3-13n^2+47n-35.$$ The proof classifies the frequency points lying on at least two of the thirteen orthogonality hyperplanes and then uses two global counting identities.',
+  },
+  {
+    id: '3d-queen-domination',
+    title: 'Core Coverage and Exact Computation for Three-Dimensional Queen Domination',
+    authors: ['Mahesh Ramani'],
+    year: 2026,
+    dateLabel: '17 August 2026',
+    area: '3D Queen Graphs',
+    tags: ['domination', 'queen graphs', 'integer linear programming', 'symmetry'],
+    arxivId: '2604.03793',
+    pdfFile: 'papers/3d-queen-domination.pdf',
+    previewFile: 'previews/3d-queen-domination.jpg',
+    abstract:
+      'Let $Q_n^3$ be the queen graph on the $n \\times n \\times n$ board. For the inner core $C=\\{1,\\ldots,n-2\\}^3$, we determine the number of vertices of $C$ dominated by a queen at a corner, on an edge, on a face, or in the interior. In particular, the best boundary placement has strictly smaller core coverage than a central interior placement. The calculation is compatible with a reduction under the order-48 octahedral symmetry group. The elementary projection, volume, and layer bounds give $$\\max\\left\\{\\gamma(Q_n^2),\\left\\lceil\\frac{n^3}{13n-12}\\right\\rceil\\right\\}\\le\\gamma(Q_n^3)\\le n\\gamma(Q_n^2)\\le\\frac{69}{133}n^2+O(n),$$ and hence $\\gamma(Q_n^3)=\\Theta(n^2)$. An integer linear programming computation, with symmetry reduction and independent solution checks, gives $$\\gamma(Q_n^3)=1,1,1,4,6,8\\quad(n=1,\\ldots,6).$$ For $n=7$, the certified bounds are $10\\le\\gamma(Q_7^3)\\le12$.',
+  },
+];
+
+export const AREAS = ['All', 'Hypergraphs', 'Algebra & Boolean Lattices', '3D Queen Graphs'] as const;
