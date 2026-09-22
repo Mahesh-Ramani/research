@@ -25,8 +25,7 @@ export function ExplanationsPage({ selectedId, onRead }: Props) {
           <ArrowLeft className="h-3.5 w-3.5" /> All explanations
         </button>
         <article className="mx-auto mt-8 max-w-3xl">
-          <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500">Plain-English research note</div>
-          <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight tracking-tight">{paper.title}</h1>
+          <h1 className="font-serif text-4xl font-semibold leading-tight tracking-tight">{paper.title}</h1>
           <button onClick={() => onRead(paper)} className="mt-5 inline-flex items-center gap-2 border border-stone-950 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.14em]">
             <BookOpen className="h-3.5 w-3.5" /> Read the paper
           </button>
