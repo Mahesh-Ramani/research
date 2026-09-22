@@ -18,9 +18,6 @@ export function PaperReader({ paper, onClose }: Props) {
       <div className="mx-auto flex h-full max-w-[1500px] flex-col overflow-hidden bg-[#f7f5f2] shadow-2xl sm:border sm:border-stone-300">
         <div className="flex items-start justify-between gap-4 border-b border-stone-300 bg-white px-4 py-3 sm:px-6">
           <div className="min-w-0">
-            <div className="mb-1 font-mono text-[10px] uppercase tracking-[0.18em] text-stone-500">
-              In-site PDF reader
-            </div>
             <h2 className="truncate font-serif text-base font-semibold sm:text-xl">{paper.title}</h2>
           </div>
           <div className="flex shrink-0 items-center gap-2">
