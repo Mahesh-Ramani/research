@@ -20,7 +20,7 @@ export function HomePage({ setTab, onRead }: Props) {
         <div className="space-y-8 lg:col-span-7">
           <div className="space-y-5">
             <h1 className="max-w-3xl font-serif text-5xl font-semibold leading-[1.02] tracking-tight text-stone-950 sm:text-6xl">
-              Combinatorics, geometry, and algebra.
+              Hello, I’m Mahesh.
             </h1>
             <p className="max-w-2xl font-serif text-lg leading-relaxed text-stone-700">{SITE.intro}</p>
             <div className="flex flex-wrap gap-3 pt-1">
