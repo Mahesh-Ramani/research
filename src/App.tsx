@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { PaperReader } from './components/PaperReader';
-import { AboutPage } from './pages/AboutPage';
 import { ExplanationsPage } from './pages/ExplanationsPage';
 import { HomePage } from './pages/HomePage';
 import { PapersPage } from './pages/PapersPage';
@@ -32,7 +31,6 @@ export default function App() {
         {tab === 'home' && <HomePage setTab={changeTab} onRead={setPaper} />}
         {tab === 'papers' && <PapersPage onRead={setPaper} onExplain={openExplanation} />}
         {tab === 'explanations' && <ExplanationsPage selectedId={explanationId} onRead={setPaper} />}
-        {tab === 'about' && <AboutPage />}
       </main>
 
       <footer className="border-t border-stone-200 bg-[#f6f3ef] py-10">
