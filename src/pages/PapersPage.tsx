@@ -91,7 +91,7 @@ export function PapersPage({ onRead, onExplain }: Props) {
                   onClick={() => onRead(paper)}
                   className="inline-flex items-center gap-2 bg-stone-950 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.14em] text-white"
                 >
-                  <BookOpen className="h-3.5 w-3.5" /> Read in site
+                  <BookOpen className="h-3.5 w-3.5" /> Read
                 </button>
                 <button
                   onClick={() => onExplain(paper.id)}
