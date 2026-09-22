@@ -9,7 +9,6 @@ const tabs: Array<{ key: PageTab; label: string }> = [
   { key: 'home', label: 'Home' },
   { key: 'papers', label: 'Papers' },
   { key: 'explanations', label: 'Explanations' },
-  { key: 'about', label: 'About' },
 ];
 
 export function Navbar({ active, onChange }: Props) {
