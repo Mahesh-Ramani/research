@@ -19,7 +19,6 @@ export function HomePage({ setTab, onRead }: Props) {
       <section className="grid gap-10 border-b border-stone-200 pb-16 lg:grid-cols-12 lg:gap-14">
         <div className="space-y-8 lg:col-span-7">
           <div className="space-y-5">
-            <div className="text-[11px] font-bold uppercase tracking-[0.22em] text-stone-500">{SITE.role} · Mathematics</div>
             <h1 className="max-w-3xl font-serif text-5xl font-semibold leading-[1.02] tracking-tight text-stone-950 sm:text-6xl">
               Combinatorics, geometry, and algebra.
             </h1>
@@ -35,7 +34,6 @@ export function HomePage({ setTab, onRead }: Props) {
           </div>
 
           <div className="border-t border-stone-200 pt-7">
-            <div className="mb-4 text-[10px] font-bold uppercase tracking-[0.2em] text-stone-500">Selected work</div>
             <div className="divide-y divide-stone-200 border-y border-stone-200">
               {featured.map((paper) => (
                 <button
@@ -56,8 +54,7 @@ export function HomePage({ setTab, onRead }: Props) {
             <PaperPreview paper={selected} className="mx-auto aspect-[0.707] max-w-sm" />
             <div className="mt-5 flex items-center justify-between gap-4">
               <div>
-                <div className="font-mono text-[10px] uppercase tracking-wider text-stone-500">Featured manuscript</div>
-                <div className="mt-1 font-serif text-lg font-semibold leading-snug">{selected.title}</div>
+                <div className="font-serif text-lg font-semibold leading-snug">{selected.title}</div>
               </div>
               <button onClick={() => onRead(selected)} className="shrink-0 border border-stone-950 bg-white p-3 text-stone-950 hover:bg-stone-950 hover:text-white" aria-label={`Read ${selected.title}`}>
                 <BookOpen className="h-4 w-4" />
