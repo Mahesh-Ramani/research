@@ -1,4 +1,4 @@
-export type PageTab = 'home' | 'papers' | 'explanations' | 'about';
+export type PageTab = 'home' | 'papers' | 'explanations';
 
 export type PaperArea = 'Hypergraphs' | 'Algebra & Boolean Lattices' | '3D Queen Graphs';
 
