@@ -2,6 +2,20 @@ import { Paper } from '../types';
 
 export const PAPERS: Paper[] = [
   {
+    id: 'minimum-edge-sets-diamond-closure',
+    title: 'Minimum Edge Sets under Diamond Closure in Boolean and Distributive Lattices',
+    authors: ['Mahesh Ramani'],
+    year: 2026,
+    dateLabel: 'September 2026',
+    area: 'Algebra & Boolean Lattices',
+    tags: ['Boolean lattices', 'distributive lattices', 'diamond closure', 'out-modules', 'forbidden induced digraphs', 'Ferrers diagrams'],
+    highlight: 'Classified minimum chain- and diamond-generating edge sets through out-module decomposition, including the obstruction family $F_k$ in finite distributive lattices.',
+    pdfFile: 'papers/minimum-edge-sets-diamond-closure.pdf',
+    previewFile: 'previews/minimum-edge-sets-diamond-closure.jpg',
+    abstract:
+      'We study minimum-cardinality sets of cover edges under diamond closure in Boolean and finite distributive lattices. For a Boolean lattice $B_X$, we classify the $|X|$-edge sets whose diamond closure contains a maximal chain. Such a set is encoded by a loopless digraph, and chain-generation is governed by a decomposition into out-modules. The induced-minimal obstructions consist of four three-vertex digraphs together with an infinite family $F_k$. For a finite distributive lattice $J(P)$, every full diamond-generating set has at least $|P|$ edges, and the minimum sets are characterized by incomparability symmetry and the same family $F_k$. Every $F_k$ is realizable in a finite distributive lattice. For products of chains only $F_2$ and $F_3$ remain; for two chains the minimum generators are in bijection with Ferrers diagrams.',
+  },
+  {
     id: 'incidence-rank-bounded-defect',
     title: 'Incidence Rank and Bounded Defect for Linear Hypergraphs with Cograph Line Graphs',
     authors: ['Mahesh Ramani'],
