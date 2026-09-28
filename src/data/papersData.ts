@@ -25,6 +25,7 @@ export const PAPERS: Paper[] = [
     tags: ['incidence rank', 'cographs', 'finite nets', 'affine planes', 'extremal hypergraphs'],
     featured: true,
     highlight: 'Solved the Adak–Verma conjecture and developed a bounded-defect structural theory around the extremal case.',
+    arxivId: '2609.27777',
     pdfFile: 'papers/incidence-rank-bounded-defect.pdf',
     previewFile: 'previews/incidence-rank-bounded-defect.jpg',
     abstract:
