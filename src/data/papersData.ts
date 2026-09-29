@@ -9,7 +9,7 @@ export const PAPERS: Paper[] = [
     dateLabel: 'September 2026',
     area: 'Algebra & Boolean Lattices',
     tags: ['Boolean lattices', 'distributive lattices', 'diamond closure', 'out-modules', 'forbidden induced digraphs', 'Ferrers diagrams'],
-    highlight: 'Classified minimum chain- and diamond-generating edge sets through out-module decomposition, including the obstruction family $F_k$ in finite distributive lattices.',
+    highlight: 'Established a complete obstruction theory for minimum generating sets in finite distributive lattices, extending the Boolean-lattice classification and showing that products of chains have only two obstruction types.',
     pdfFile: 'papers/minimum-edge-sets-diamond-closure.pdf',
     previewFile: 'previews/minimum-edge-sets-diamond-closure.jpg',
     abstract:
