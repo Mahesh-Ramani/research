@@ -2,6 +2,20 @@ import { Paper } from '../types';
 
 export const PAPERS: Paper[] = [
   {
+    id: 'relative-divisors',
+    title: 'Relative divisors and intersections of noncommutative rational localizations',
+    authors: ['Mahesh Ramani'],
+    year: 2026,
+    dateLabel: 'November 2026',
+    area: 'Noncommutative Algebra',
+    tags: ['free skew fields', 'rational localizations', 'matrix pencils', 'noncommutative marked surfaces'],
+    highlight: 'Computes relative matrix divisors and proves the Berenstein–Retakh polygon conjecture using n − 2 charts for an n-gon.',
+    pdfFile: 'papers/relative-divisors.pdf',
+    previewFile: 'previews/relative-divisors.jpg',
+    abstract:
+      'The simple constituents of monic pencils determine singularity support in a free skew field. For a pencil inverse algebra that is a free ideal ring, the multiplicities of the nonbase constituents compute the scalar-regular part of Cohn’s matrix divisor theory. For independent generic invertible matrices of size at least two, every entry of a nonidentity free-group word is an atom with one relative singularity component. In rank two, opposite pivots give the exact identifications among these components. Intersections of word-entry localizations are then given by intersections of their label sets. An irreducible pencil of dimension six represents a commutator entry.\n\nFor an algebra finitely generated over the free polynomial algebra at a common regular scalar point, the residual closure is a finite pencil inverse algebra determined by the generators’ common domain. Every nonzero inverse-adjoining defect is infinite-dimensional. We compute how free-group quotients change intersections and give additive formulas for general quotient and tensor intersections. We prove Berenstein–Retakh’s polygon conjecture using $n-2$ charts for $n\\geq4$. For an unpunctured Möbius strip with $n\\geq2$ boundary marks, the upper-algebra equality follows from $n+1$ charts. For the once-marked strip, the allowed algebra is strictly smaller than its residual hull, which equals the full chart.',
+  },
+  {
     id: 'minimum-edge-sets-diamond-closure',
     title: 'Minimum Edge Sets under Diamond Closure in Boolean and Distributive Lattices',
     authors: ['Mahesh Ramani'],
@@ -125,4 +139,4 @@ export const PAPERS: Paper[] = [
   },
 ];
 
-export const AREAS = ['All', 'Hypergraphs', 'Algebra & Boolean Lattices', '3D Queen Graphs'] as const;
+export const AREAS = ['All', 'Hypergraphs', 'Algebra & Boolean Lattices', 'Noncommutative Algebra', '3D Queen Graphs'] as const;

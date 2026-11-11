@@ -1,6 +1,6 @@
 export type PageTab = 'home' | 'papers' | 'explanations';
 
-export type PaperArea = 'Hypergraphs' | 'Algebra & Boolean Lattices' | '3D Queen Graphs';
+export type PaperArea = 'Hypergraphs' | 'Algebra & Boolean Lattices' | 'Noncommutative Algebra' | '3D Queen Graphs';
 
 export interface Explanation {
   question?: string;
