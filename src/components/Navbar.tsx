@@ -1,35 +1,19 @@
-import { PageTab } from '../types';
+import { SITE } from '../data/siteData';
 
-interface Props {
-  active: PageTab;
-  onChange: (tab: PageTab) => void;
-}
-
-const tabs: Array<{ key: PageTab; label: string }> = [
-  { key: 'home', label: 'Home' },
-  { key: 'papers', label: 'Papers' },
-  { key: 'explanations', label: 'Explanations' },
-];
-
-export function Navbar({ active, onChange }: Props) {
+export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-stone-200 bg-[#fdfcfb]/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <button onClick={() => onChange('home')} className="font-serif text-lg font-semibold tracking-tight">
-          Mahesh Ramani
-        </button>
-        <nav className="flex items-center gap-1 sm:gap-5" aria-label="Primary navigation">
-          {tabs.map((tab) => (
-            <button
-              key={tab.key}
-              onClick={() => onChange(tab.key)}
-              className={`px-2 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] transition sm:text-xs ${
-                active === tab.key ? 'text-stone-950' : 'text-stone-500 hover:text-stone-950'
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
+        <a href="#top" className="font-serif text-lg font-semibold tracking-tight">
+          {SITE.name}
+        </a>
+        <nav aria-label="Primary navigation">
+          <a
+            href="#papers"
+            className="inline-block px-2 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-stone-600 transition hover:text-stone-950"
+          >
+            Papers
+          </a>
         </nav>
       </div>
     </header>

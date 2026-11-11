@@ -2,15 +2,14 @@ import { useMemo, useState } from 'react';
 import { BookOpen, ExternalLink, Search } from 'lucide-react';
 import { AREAS, PAPERS } from '../data/papersData';
 import { Paper } from '../types';
-import { MathRenderer } from '../components/MathRenderer';
-import { PaperPreview } from '../components/PaperPreview';
+import { MathRenderer } from './MathRenderer';
+import { PaperPreview } from './PaperPreview';
 
 interface Props {
   onRead: (paper: Paper) => void;
-  onExplain: (paperId: string) => void;
 }
 
-export function PapersPage({ onRead, onExplain }: Props) {
+export function PapersSection({ onRead }: Props) {
   const [area, setArea] = useState<(typeof AREAS)[number]>('All');
   const [query, setQuery] = useState('');
 
@@ -28,15 +27,16 @@ export function PapersPage({ onRead, onExplain }: Props) {
   }, [area, query]);
 
   return (
-    <div className="pb-24 pt-8 sm:pt-12">
+    <section id="papers" aria-labelledby="papers-heading" className="scroll-mt-16 pb-24 pt-8 sm:pt-12">
       <div className="border-b border-stone-200 pb-8">
         <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500">Research archive · {PAPERS.length} manuscripts</div>
-        <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight sm:text-5xl">Papers & preprints</h1>
+        <h2 id="papers-heading" className="mt-2 font-serif text-4xl font-semibold tracking-tight sm:text-5xl">Papers & preprints</h2>
 
         <div className="mt-7 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <label className="relative block max-w-md flex-1">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-stone-400" />
             <input
+              aria-label="Search papers"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder="Search titles, abstracts, or topics"
@@ -48,6 +48,7 @@ export function PapersPage({ onRead, onExplain }: Props) {
               <button
                 key={item}
                 onClick={() => setArea(item)}
+                aria-pressed={area === item}
                 className={`border px-3 py-2 text-[10px] font-bold uppercase tracking-wider ${
                   area === item ? 'border-stone-950 bg-stone-950 text-white' : 'border-stone-300 bg-white text-stone-600 hover:border-stone-950'
                 }`}
@@ -75,7 +76,7 @@ export function PapersPage({ onRead, onExplain }: Props) {
                   </>
                 )}
               </div>
-              <h2 className="mt-2 font-serif text-2xl font-semibold leading-tight sm:text-3xl">{paper.title}</h2>
+              <h3 className="mt-2 font-serif text-2xl font-semibold leading-tight sm:text-3xl">{paper.title}</h3>
               <div className="mt-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-stone-500">{paper.authors.join(', ')}</div>
 
               {paper.highlight && (
@@ -93,12 +94,6 @@ export function PapersPage({ onRead, onExplain }: Props) {
                 >
                   <BookOpen className="h-3.5 w-3.5" /> Read
                 </button>
-                <button
-                  onClick={() => onExplain(paper.id)}
-                  className="border border-stone-950 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.14em] text-stone-950"
-                >
-                  Explanation
-                </button>
                 {paper.arxivId && (
                   <a
                     href={`https://arxiv.org/abs/${paper.arxivId}`}
@@ -114,6 +109,6 @@ export function PapersPage({ onRead, onExplain }: Props) {
           </article>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

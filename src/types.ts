@@ -1,14 +1,4 @@
-export type PageTab = 'home' | 'papers' | 'explanations';
-
 export type PaperArea = 'Hypergraphs' | 'Algebra & Boolean Lattices' | 'Noncommutative Algebra' | '3D Queen Graphs';
-
-export interface Explanation {
-  question?: string;
-  context?: string;
-  result?: string;
-  idea?: string;
-  technical?: string;
-}
 
 export interface Paper {
   id: string;
@@ -22,7 +12,5 @@ export interface Paper {
   pdfFile: string;
   previewFile: string;
   arxivId?: string;
-  featured?: boolean;
   highlight?: string;
-  explanation?: Explanation;
 }
